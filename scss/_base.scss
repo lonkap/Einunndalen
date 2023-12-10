@@ -1,0 +1,119 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+body{
+  margin: 0;
+  background-color: #F8F8F8; 
+ 
+}
+.max-width{
+  max-width: 1500px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 1000px rgb(207, 207, 207);
+}
+//DEFINOVÁNÍ VELIKOSTI A DRUHU PÍSMA **************************
+:root {
+  --font-special:'Comfortaa', sans-serif;
+  --font-default: 'Lato', sans-serif;
+  --size-h1: 38px;
+  --size-h2: 25px;
+  --size-h3-4-p: 20px;
+  --size-subtitle: 12px;
+   --color-special: #B5D2E1;
+  --color-footer: #434343;
+  --grey: #F5F5F5;
+  --spacer: 20px;
+  --spacer-2 :30px;
+  --weight-light: 300;
+  --weight-regular:400;
+  --weight-bold: 600px;
+  --small: 600px;
+  --medium: 800px;
+  --large: 1200px;
+  }
+   
+    //VELIKOST PÍSMA H1-H4 A p  **************************************
+    body,
+    p,
+    h4,
+    li{
+        font-family: var(--font-default);
+        font-weight: var(--weight-light);
+        font-size: var(--size-h3-4-p);
+    }
+    
+    h1,
+    h2,
+    h3{
+        font-family: var(--font-special);
+        font-weight: var(--weight-bold);
+        
+      }
+    h1{
+      font-size: var(--size-h1);
+    }
+    h2{
+      font-size: var(--size-h2);
+    }
+    h3,
+    h4,
+    p{
+      font-size: var(--size-h3-4-p);
+    }
+    //ODKAZY - BARVY, DEKORACE 
+    a{
+      color:rgb(23, 114, 205);
+      font-weight: 600;
+      &:hover{
+        color: deepskyblue;
+       
+      }
+    }
+
+
+    .white{ //BARVA POZADÍ STRÁNEK
+      background-color: white;
+    }
+       
+      .info{ //PADDING STRÁNKY "INFO"
+        padding: 100px;
+        @media (max-width: 599px){
+          padding: var(--spacer);
+        }
+      }
+//ŠEDÉ POZADÍ U SEKCE AKTIVITETER NA HOMEPAGE 
+.aktiviteter{
+  background-image: linear-gradient( var(--grey),white, var(--grey));
+  margin-top:-5px;  //ELIMINUJE BÍLÝ PRUH MEZI MAPOU A SEKCÍ AKTIVITY NA HOMEPAGE
+}
+.åpne_buer{
+  background-image: linear-gradient( var(--grey),white, var(--grey));
+}
+ //ODSAZANÍ VŠECH HLAVNÍCH NADPISŮ JEDNOTLIVÝCH STRÁNEK
+.section_title{
+  padding:60px 0 40px 0;
+  margin: 0;
+  text-align: center;
+}
+//ZAROVNÁNÍ VŠECH PODNADPISŮ H2 A H3 VLEVO
+.section_subtitle{
+  text-align: left;
+  margin-left: var(--spacer-2);
+  margin:0;
+  padding: 40px var(--spacer-2) 0 var(--spacer-2);
+  @media (min-width:800px){ //ODSOUVÁ H3 O 90PX ZLEVA *************MEDIA MEDIUM,LARGE *************
+    margin-left: 60px;
+  }
+}
+::marker{// ZBARVUJE ODRÁŽKY U SEZNAMU V "OVERNATTING"
+  color: var(--color-special);
+}
+ul{//DĚLÁ Z ODRÁŽEK ČTVERCE V "OVERNATTING"
+  list-style-type: square;
+  padding: 0;
+  @media (max-width:599px){ //ODSAZUJE SEZNAM ZLEVA V "OVERNATTING" ********* MEDIA SMALL ***********
+    padding: var(--spacer);
+}
+}
+.attraksjoner{//ŠEDÝ PRUH V "TIPS"
+  background-color: var(--grey);
+}

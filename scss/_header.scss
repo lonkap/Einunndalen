@@ -1,0 +1,40 @@
+//LOGO SMALL***************************************************
+.header__logo{
+    width: 100%;
+    max-width: 150px;
+}
+//VERTIKÁLNÍ MENU **************************************
+.menu{
+text-align: center;
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.menu__item{
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    color: black;
+    border:5px solid transparent;
+    border-radius: 15px;
+    &:hover,
+    &:active,
+    &:focus{
+        border: 5px solid var(--color-special);
+        border-radius: 15px;
+    }
+    &--active{
+        color:rgb(23, 114, 205);
+    }
+}
+//STÍN POD HEADER **********************************************
+.header{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-bottom: 0.5px solid var(--color-special);
+    background-color: white;
+    position: relative;
+    z-index:1;
+  
+}
+
