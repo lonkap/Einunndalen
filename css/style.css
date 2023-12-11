@@ -47,6 +47,10 @@ li {
   font-size: var(--size-h3-4-p);
 }
 
+h4 {
+  font-weight: var(--weight-regular);
+}
+
 h1,
 h2,
 h3 {
@@ -238,7 +242,7 @@ ul {
   text-align: center;
 }
 .card_text a {
-  font-weight: var(--weight-light);
+  font-weight: var(--weight-regular);
 }
 
 .kontejner {
