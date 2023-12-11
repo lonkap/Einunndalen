@@ -132,11 +132,20 @@ text-align: center;
     box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.2);
     height: 300px;
     text-align: center;
+    & h4{
+        margin:0  0 26px 0;
+    }
+    &_margin{
+        margin-top:26px!important;//ODSAZUJE NÁZVY DOLŮ NA KARTĚ V "TIPS" ###############!IMPORTANT
+        
+    }
     @media (max-width:599px){ //  ZVĚTŠUJE ROZESTUPY MEZI KARTAMI V "OVERNATTING"****** MEDIA SMALL ********
         margin: 50px 10px;
         }
+          
     }
-//STYLUJE FOTOGRAFIE NA KARTÁCH V "OVERNATTING"
+
+    //STYLUJE FOTOGRAFIE NA KARTÁCH V "OVERNATTING"
 .foto{
         width: 100%;
         height: 70%;

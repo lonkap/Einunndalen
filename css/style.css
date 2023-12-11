@@ -333,6 +333,12 @@ ul {
   height: 300px;
   text-align: center;
 }
+.container_card h4 {
+  margin: 0 0 26px 0;
+}
+.container_card_margin {
+  margin-top: 26px !important;
+}
 @media (max-width: 599px) {
   .container_card {
     margin: 50px 10px;
